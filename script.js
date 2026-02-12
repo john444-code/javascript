@@ -1,6 +1,7 @@
 // Message to developers (console)
 function messageDeveloper(message) {
     console.log(message);
+    
 }
 
 // Message to users (UI display)
@@ -9,6 +10,8 @@ function messageUser(message) {
     const messageElement = document.createElement('div');
     messageElement.textContent = message;
     messagesContainer.appendChild(messageElement);
+    
+    
 }
 
 // Send message to both developers and users
@@ -19,3 +22,4 @@ function messageBoth(message) {
 
 // Example usage
 messageBoth('Hello from both!');
+console.error('This is a console error message!');
